@@ -1,7 +1,7 @@
 # Rentacar project
 This is a simple vehicle rental application.
 
-## Instalation
+## Installation
 ```
 yarn i
 ```
