@@ -1,0 +1,24 @@
+{
+  "name": "rentacar",
+  "scripts": {
+    "i": "yarn && yarn --cwd client && yarn --cwd server",
+    "dev": "concurrently \"yarn:dev:client\" \"yarn:dev:server\"",
+    "build": "concurrently \"yarn:build:client\" \"yarn:build:server\"",
+    "start": "concurrently \"yarn:start:client\" \"yarn:start:server\"",
+    "dev:client": "yarn --cwd client dev",
+    "dev:server": "yarn --cwd server dev",
+    "build:client": "yarn --cwd client build",
+    "build:server": "yarn --cwd server build",
+    "start:client": "yarn --cwd client preview",
+    "start:server": "yarn --cwd server start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "version": "1.0.0",
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
